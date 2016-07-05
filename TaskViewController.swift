@@ -19,7 +19,7 @@ class TaskViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
        // ViewController taskList.append(myTasks)
-        tableView.reloadData()
+        //tableView.reloadData()
         // Once the view loads, use the String value stored in textData to
         // to set the view's label text as proof that we actually got the
         // data passed to us from the other view controller.
