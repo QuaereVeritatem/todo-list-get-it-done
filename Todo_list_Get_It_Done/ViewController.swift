@@ -90,14 +90,17 @@ class ViewController: UIViewController {
            
             //TaskViewController is a class of UITableViewController...
             //the destination is a UIViewController
-           let secondVC = segue.destinationViewController as! TaskViewController
+           //let secondVC = segue.destinationViewController as! TaskViewController
             
             // Pass some data to the next View Controller by setting one or more of
             // its properties.
-            secondVC.taskList.append(addTaskLabel.text!)
-        }
+            //secondVC.taskList.append(addTaskLabel.text!)
+            
+            //a singleton class that stores the data and then allows the viewcontrollers to acces it
+            TodoList.sharedInstance.taskList.append(addTaskLabel.text!)
     }
 
 
 }
 
+}
